@@ -44,3 +44,11 @@ test('function midrange: returns NaN from list of []', () => {
 test('function midrange: returns NaN from list of [1, 2, 3]', () => {
   expect(fn.midrange([1, 2, 3])).toBe(2);
 })
+
+test('function geometricMean: returns NaN from list of []', () => {
+  expect(fn.geometricMean([])).toBe(NaN);
+})
+
+test('function geometricMean: returns 1.8171205928321 from list of [1, 2, 3]', () => {
+  expect(fn.geometricMean([1, 2, 3])).toBeCloseTo(1.8171205928321);
+})

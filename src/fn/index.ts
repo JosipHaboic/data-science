@@ -74,3 +74,16 @@ export function midrange(data: number[]): number {
 
   return arithmeticMean([Math.min(...data), Math.max(...data)]);
 }
+
+/**
+ *
+ * @param number list
+ * @returns number
+ */
+export function geometricMean(data: number[]): number {
+  if (data.length === 0) { return NaN; }
+
+  return Math.pow(data.reduce((previous: number, current: number) => {
+      return previous * current;
+  }), 1 / data.length);
+}
