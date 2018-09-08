@@ -40,3 +40,16 @@ test('function mean: returns undefined from list of []', () => {
 test('function mean: returns 2 from list of [1, 2, 3]', () => {
   expect(fn.mean([1, 2, 3])).toBe(2);
 })
+
+test('function median: returns undefined from list of []', () => {
+  expect(fn.median([])).toBe(undefined);
+})
+
+test('function median: returns 2 from list of [1, 2, 3]', () => {
+  expect(fn.median([1, 2, 3])).toBe(2);
+})
+
+test('function median: returns 2 from list of [1, 2, 3, 4]', () => {
+  expect(fn.median([1, 2, 3, 4])).toBe(2.5);
+})
+

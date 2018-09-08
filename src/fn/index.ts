@@ -51,3 +51,19 @@ export function mean(data: number[]): number {
 
   return sumOfData / data.length;
 }
+
+/**
+ *
+ * @param data - holds numeric ordered data in a list
+ * @returns true if data lenght is even false otherwise
+ */
+export function median(data: number[]): number {
+  if (data.length === 0)  { return undefined; }
+  const length = data.length;
+  const isOdd = (length + 1) % 2 === 0;
+  if (isOdd) {
+    return data[((length + 1) / 2) - 1];
+  } else {
+    return mean([data[length / 2], data[(length / 2) - 1]]);
+  }
+}
