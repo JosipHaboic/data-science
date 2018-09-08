@@ -1,6 +1,6 @@
 /**
  *
- * @param data holds data in a list
+ * @param data - holds data in a list
  * @returns largest number in list
  */
 export function max(data: number[]): number {
@@ -13,8 +13,8 @@ export function max(data: number[]): number {
 
 /**
  *
- * @param data holds data in a list
- * @returns largest number in list
+ * @param data - holds data in a list
+ * @returns smallest number in list
  */
 export function min(data: number[]): number {
   if (data.length === 0)  { return undefined; }
