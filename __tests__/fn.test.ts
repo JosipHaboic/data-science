@@ -24,3 +24,11 @@ test('function min: returns 1 from list of [1, 2, 3]', () => {
 test('function min: returns 1 from list of [3, 2, 1]', () => {
   expect(fn.min([3, 2, 1])).toBe(1);
 })
+
+test('function sum: returns undefined from list of []', () => {
+  expect(fn.sum([])).toBe(undefined);
+})
+
+test('function sum: returns 6 from list of [1, 2, 3]', () => {
+  expect(fn.sum([1, 2, 3])).toBe(6);
+})

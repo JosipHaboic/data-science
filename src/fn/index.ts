@@ -23,3 +23,16 @@ export function min(data: number[]): number {
     return previous <= next ? previous : next;
   });
 }
+
+/**
+ *
+ * @param data - holds numeric data in a list
+ * @returns sum of data
+ */
+export function sum(data: number[]): number {
+  if (data.length === 0)  { return undefined; }
+
+  return data.reduce((previous: number, next: number) => {
+    return previous + next;
+  }, 0);
+}
