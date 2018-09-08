@@ -52,3 +52,11 @@ test('function geometricMean: returns NaN from list of []', () => {
 test('function geometricMean: returns 1.8171205928321 from list of [1, 2, 3]', () => {
   expect(fn.geometricMean([1, 2, 3])).toBeCloseTo(1.8171205928321);
 })
+
+test('function harmonicMean: returns NaN from list of []', () => {
+  expect(fn.harmonicMean([])).toBe(NaN);
+})
+
+test('function harmonicMean: returns NaN from list of [1, 2, 3]', () => {
+  expect(fn.harmonicMean([1, 2, 3])).toBeCloseTo(1.6363636363636);
+})

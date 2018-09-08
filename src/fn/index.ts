@@ -87,3 +87,17 @@ export function geometricMean(data: number[]): number {
       return previous * current;
   }), 1 / data.length);
 }
+
+/**
+ *
+ * @param number list
+ * @returns number
+ */
+export function harmonicMean(data: number[]): number {
+  if (data.length === 0) { return NaN; }
+
+  return data.length / (data.reduce(
+    (previous: number, current: number) => {
+      return previous + (1 /current);
+  }));
+}
