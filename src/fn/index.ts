@@ -98,6 +98,6 @@ export function harmonicMean(data: number[]): number {
 
   return data.length / (data.reduce(
     (previous: number, current: number) => {
-      return previous + (1 /current);
+      return previous + (1 / current);
   }));
 }
