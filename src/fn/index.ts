@@ -28,7 +28,7 @@ export function arithmeticMean(data: number[]): number {
 
 /**
  *
- * @param number list
+ * @param number sorted list
  * @returns number
  */
 export function median(data: number[]): number {
@@ -66,7 +66,7 @@ export function mode(data: number[]): Object {
 
 /**
  *
- * @param number list
+ * @param number sortred list
  * @returns number
  */
 export function midrange(data: number[]): number {
