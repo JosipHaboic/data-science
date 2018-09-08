@@ -1,7 +1,7 @@
 /**
- *
- * @param number list
- * @returns number
+ * Calculates the sum of a number list
+ * @param {array} data - List of numbers
+ * @returns {number} - Sum of data
  */
 export function sum(data: number[]): number {
   if (data.length === 0)  { return NaN; }
@@ -12,9 +12,9 @@ export function sum(data: number[]): number {
 }
 
 /**
- *
- * @param number list
- * @returns number
+ * Calculates the arithmetic mean from a number list
+ * @param {array} data - List of numbers
+ * @returns {number} - Arithmetic mean
  */
 export function arithmeticMean(data: number[]): number {
   if (data.length === 0)  { return NaN; }
@@ -27,9 +27,9 @@ export function arithmeticMean(data: number[]): number {
 }
 
 /**
- *
- * @param number sorted list
- * @returns number
+ * Calculates the median of numeric sorted list
+ * @param {array} data - Sorted list of numbers
+ * @returns {number} - Median of numeric values
  */
 export function median(data: number[]): number {
   if (data.length === 0)  { return NaN; }
@@ -43,13 +43,13 @@ export function median(data: number[]): number {
 }
 
 /**
- *
- * @param number list
- * @returns number or NaN
+ * Calculates the mode of the numeric list
+ * @param {array} data - List of numbers
+ * @returns {Object} - Object with modes
  */
 export function mode(data: number[]): Object {
   if (data.length === 0)  { return NaN; }
-  const counter: Object = new Object();
+  const counter = {};
 
   for (const item of data) {
     if (counter[item]) {
@@ -65,9 +65,9 @@ export function mode(data: number[]): Object {
 }
 
 /**
- *
- * @param number sortred list
- * @returns number
+ * Calculates the midrange of numeric sorted values
+ * @param {array} - Sortred list of numbers
+ * @returns {number} - Midrange of numeric values
  */
 export function midrange(data: number[]): number {
   if (data.length === 0) { return NaN; }
@@ -76,9 +76,9 @@ export function midrange(data: number[]): number {
 }
 
 /**
- *
- * @param number list
- * @returns number
+ * Caluclates geometric mean of numeric values
+ * @param {array} data - List of numeric values
+ * @returns {number} - Geometric mean
  */
 export function geometricMean(data: number[]): number {
   if (data.length === 0) { return NaN; }
@@ -89,9 +89,9 @@ export function geometricMean(data: number[]): number {
 }
 
 /**
- *
- * @param number list
- * @returns number
+ * Calculates harmonic mean of numeric values
+ * @param {array} - List of numeric values
+ * @returns {number} - Harmonic mean
  */
 export function harmonicMean(data: number[]): number {
   if (data.length === 0) { return NaN; }
