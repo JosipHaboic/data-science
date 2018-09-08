@@ -60,3 +60,11 @@ test('function harmonicMean: returns NaN from list of []', () => {
 test('function harmonicMean: returns NaN from list of [1, 2, 3]', () => {
   expect(fn.harmonicMean([1, 2, 3])).toBeCloseTo(1.6363636363636);
 })
+
+test('function range: returns NaN from list of []', () => {
+  expect(fn.range([])).toBe(NaN);
+})
+
+test('function range: returns 2 from list of [1, 2, 3]', () => {
+  expect(fn.range([1, 2, 3])).toBe(2);
+})
