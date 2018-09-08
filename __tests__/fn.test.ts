@@ -1,4 +1,4 @@
-import * as fn from '../src/fn';
+import * as fn from '../src/statistics';
 
 
 test('function sum: returns NaN from list of []', () => {
