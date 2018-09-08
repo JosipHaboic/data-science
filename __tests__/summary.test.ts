@@ -2,7 +2,7 @@ import * as fn from '../src/statistics/summary';
 
 
 test('function sum: returns NaN from list of []', () => {
-  expect(fn.sum([])).toBe(NaN);
+  expect(fn.sum([])).toThrowError('Data is empty list');
 })
 
 test('function sum: returns 6 from list of [1, 2, 3]', () => {
@@ -10,7 +10,7 @@ test('function sum: returns 6 from list of [1, 2, 3]', () => {
 })
 
 test('function arithmeticMean: returns NaN from list of []', () => {
-  expect(fn.arithmeticMean([])).toBe(NaN);
+  expect(fn.arithmeticMean([])).toThrowError('Data is empty list');
 })
 
 test('function arithmeticMean: returns 2 from list of [1, 2, 3]', () => {
@@ -18,7 +18,7 @@ test('function arithmeticMean: returns 2 from list of [1, 2, 3]', () => {
 })
 
 test('function median: returns NaN from list of []', () => {
-  expect(fn.median([])).toBe(NaN);
+  expect(fn.median([])).toThrowError('Data is empty list');
 })
 
 test('function median: returns 2 from list of [1, 2, 3]', () => {
@@ -30,7 +30,7 @@ test('function median: returns 2 from list of [1, 2, 3, 4]', () => {
 })
 
 test('function mode: returns NaN from list of []', () => {
-  expect(fn.mode([])).toBe(NaN);
+  expect(fn.mode([])).toThrowError('Data is empty list');
 })
 
 test('function mode: returns {"1": 1, "2": 2} from list of [1, 2, 2]', () => {
@@ -38,7 +38,7 @@ test('function mode: returns {"1": 1, "2": 2} from list of [1, 2, 2]', () => {
 })
 
 test('function midrange: returns NaN from list of []', () => {
-  expect(fn.midrange([])).toBe(NaN);
+  expect(fn.midrange([])).toThrowError('Data is empty list');
 })
 
 test('function midrange: returns NaN from list of [1, 2, 3]', () => {
@@ -46,7 +46,7 @@ test('function midrange: returns NaN from list of [1, 2, 3]', () => {
 })
 
 test('function geometricMean: returns NaN from list of []', () => {
-  expect(fn.geometricMean([])).toBe(NaN);
+  expect(fn.geometricMean([])).toThrowError('Data is empty list');
 })
 
 test('function geometricMean: returns 1.8171205928321 from list of [1, 2, 3]', () => {
@@ -54,7 +54,7 @@ test('function geometricMean: returns 1.8171205928321 from list of [1, 2, 3]', (
 })
 
 test('function harmonicMean: returns NaN from list of []', () => {
-  expect(fn.harmonicMean([])).toBe(NaN);
+  expect(fn.harmonicMean([])).toThrowError('Data is empty list');
 })
 
 test('function harmonicMean: returns NaN from list of [1, 2, 3]', () => {
