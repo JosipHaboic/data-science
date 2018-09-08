@@ -36,3 +36,18 @@ export function sum(data: number[]): number {
     return previous + next;
   }, 0);
 }
+
+/**
+ *
+ * @param data - holds numeric data in a list
+ * @returns arithmetic mean of data
+ */
+export function mean(data: number[]): number {
+  if (data.length === 0)  { return undefined; }
+
+  const sumOfData = data.reduce((previous: number, next: number) => {
+    return previous + next;
+  }, 0);
+
+  return sumOfData / data.length;
+}

@@ -32,3 +32,11 @@ test('function sum: returns undefined from list of []', () => {
 test('function sum: returns 6 from list of [1, 2, 3]', () => {
   expect(fn.sum([1, 2, 3])).toBe(6);
 })
+
+test('function mean: returns undefined from list of []', () => {
+  expect(fn.mean([])).toBe(undefined);
+})
+
+test('function mean: returns 2 from list of [1, 2, 3]', () => {
+  expect(fn.mean([1, 2, 3])).toBe(2);
+})
