@@ -19,7 +19,10 @@
     "strictNullChecks": false
   },
   "include": [
-    "src/**/*",
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
     "__tests__/**/*"
   ]
 }
