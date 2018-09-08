@@ -16,7 +16,7 @@ export function sum(data: number[]): number {
  * @param number list
  * @returns number
  */
-export function mean(data: number[]): number {
+export function arithmeticMean(data: number[]): number {
   if (data.length === 0)  { return NaN; }
 
   const sumOfData = data.reduce((previous: number, current: number) => {
@@ -38,7 +38,7 @@ export function median(data: number[]): number {
   if (isOdd) {
     return data[((length + 1) / 2) - 1];
   } else {
-    return mean([data[length / 2], data[(length / 2) - 1]]);
+    return arithmeticMean([data[length / 2], data[(length / 2) - 1]]);
   }
 }
 
@@ -72,5 +72,5 @@ export function mode(data: number[]): Object {
 export function midrange(data: number[]): number {
   if (data.length === 0) { return NaN; }
 
-  return mean([Math.min(...data), Math.max(...data)]);
+  return arithmeticMean([Math.min(...data), Math.max(...data)]);
 }

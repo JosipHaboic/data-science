@@ -9,12 +9,12 @@ test('function sum: returns 6 from list of [1, 2, 3]', () => {
   expect(fn.sum([1, 2, 3])).toBe(6);
 })
 
-test('function mean: returns NaN from list of []', () => {
-  expect(fn.mean([])).toBe(NaN);
+test('function arithmeticMean: returns NaN from list of []', () => {
+  expect(fn.arithmeticMean([])).toBe(NaN);
 })
 
-test('function mean: returns 2 from list of [1, 2, 3]', () => {
-  expect(fn.mean([1, 2, 3])).toBe(2);
+test('function arithmeticMean: returns 2 from list of [1, 2, 3]', () => {
+  expect(fn.arithmeticMean([1, 2, 3])).toBe(2);
 })
 
 test('function median: returns NaN from list of []', () => {
