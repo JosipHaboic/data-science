@@ -4,7 +4,9 @@
  * @returns {number} - Sum of data
  */
 export function sum(data: number[]): number {
-  if (data.length === 0)  { return NaN; }
+  if (data.length === 0) {
+    throw new Error('Data is empty list');
+  }
 
   return data.reduce((previous: number, current: number) => {
     return previous + current;
@@ -17,7 +19,9 @@ export function sum(data: number[]): number {
  * @returns {number} - Arithmetic mean
  */
 export function arithmeticMean(data: number[]): number {
-  if (data.length === 0)  { return NaN; }
+  if (data.length === 0) {
+    throw new Error('Data is empty list');
+  }
 
   const sumOfData = data.reduce((previous: number, current: number) => {
     return previous + current;
@@ -32,7 +36,10 @@ export function arithmeticMean(data: number[]): number {
  * @returns {number} - Median of numeric values
  */
 export function median(data: number[]): number {
-  if (data.length === 0)  { return NaN; }
+  if (data.length === 0) {
+    throw new Error('Data is empty list');
+  }
+
   const length = data.length;
   const isOdd = (length + 1) % 2 === 0;
   if (isOdd) {
@@ -48,7 +55,10 @@ export function median(data: number[]): number {
  * @returns {Object} - Object with modes
  */
 export function mode(data: number[]): Object {
-  if (data.length === 0)  { return NaN; }
+  if (data.length === 0) {
+    throw new Error('Data is empty list');
+  }
+
   const counter = {};
 
   for (const item of data) {
@@ -70,7 +80,9 @@ export function mode(data: number[]): Object {
  * @returns {number} - Midrange of numeric values
  */
 export function midrange(data: number[]): number {
-  if (data.length === 0) { return NaN; }
+  if (data.length === 0) {
+    throw new Error('Data is empty list');
+  }
 
   return arithmeticMean([Math.min(...data), Math.max(...data)]);
 }
@@ -81,7 +93,9 @@ export function midrange(data: number[]): number {
  * @returns {number} - Geometric mean
  */
 export function geometricMean(data: number[]): number {
-  if (data.length === 0) { return NaN; }
+  if (data.length === 0) {
+    throw new Error('Data is empty list');
+  }
 
   return Math.pow(data.reduce((previous: number, current: number) => {
       return previous * current;
@@ -94,7 +108,9 @@ export function geometricMean(data: number[]): number {
  * @returns {number} - Harmonic mean
  */
 export function harmonicMean(data: number[]): number {
-  if (data.length === 0) { return NaN; }
+  if (data.length === 0) {
+    throw new Error('Data is empty list');
+  }
 
   return data.length / (data.reduce(
     (previous: number, current: number) => {
