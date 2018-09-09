@@ -18,4 +18,11 @@ module.exports = {
     '!src/**/*.d.ts',
     '!src/**/index.ts',
   ],
+  "reporters": [
+    "default",
+    ["./node_modules/jest-html-reporter", {
+        "pageTitle": "Test Report",
+        "outputPath": "./test-output/output.html"
+    }]
+]
 };
