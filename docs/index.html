@@ -65,8 +65,39 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<h1 id="data-science">data-science</h1>
-				<h2 id="data-science-framework">Data science framework</h2>
-				<p>Based on information provided here: <a href="https://www.saedsayad.com">An Introduction to Data Science</a></p>
+				<h2 id="data-science-library">Data science library</h2>
+				<hr>
+				<ul>
+					<li>Statistics<ul>
+							<li>Summary statictics</li>
+							<li>Dispersion statistics</li>
+						</ul>
+					</li>
+					<li>Data Transformation<ul>
+							<li>Binning</li>
+							<li>Encoding - TODO</li>
+						</ul>
+					</li>
+					<li>Data Cleansing<ul>
+							<li>Filters - TODO</li>
+						</ul>
+					</li>
+					<li>Common function<ul>
+							<li>TODO</li>
+						</ul>
+					</li>
+				</ul>
+				<hr>
+				<h3 id="how-to-docs">How To: Docs</h3>
+				<p><strong>Note</strong>: Docs are already builded in this repository so you can skip build part and just serve them, but if you want to change the looks or add something in your local copy then you need to do build step first.</p>
+				<p>You first need to install typedoc:</p>
+				<pre><code class="language-bash">npm install -g typedoc</code></pre>
+				<p>Then you need to run npm build script:</p>
+				<pre><code class="language-bash">npm run docs:build</code></pre>
+				<p>And finally you need to start serving the docs with local http server, script uses as default http-server:</p>
+				<pre><code class="language-bash">npm run docs:serve</code></pre>
+				<p>Now open your web broweser and go to this address:</p>
+				<pre><code class="language-bash">localhost:4000</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -77,9 +108,6 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_statistics_dispersion_.html">"statistics/dispersion"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_statistics_index_.html">"statistics/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_statistics_summary_.html">"statistics/summary"</a>
