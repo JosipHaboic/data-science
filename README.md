@@ -42,5 +42,5 @@ npm run docs:serve
 Now open your web broweser and go to this address:
 
 ``` bash
-localhost:4000
+localhost:8080
 ```
