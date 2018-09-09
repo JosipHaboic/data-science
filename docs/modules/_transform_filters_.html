@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;statistics/summary&quot; | data-science</title>
+	<title>&quot;transform/filters&quot; | data-science</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_statistics_summary_.html">&quot;statistics/summary&quot;</a>
+					<a href="_transform_filters_.html">&quot;transform/filters&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;statistics/summary&quot;</h1>
+			<h1>External module &quot;transform/filters&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -73,13 +73,11 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_statistics_summary_.html#arithmeticmean" class="tsd-kind-icon">arithmetic<wbr>Mean</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_statistics_summary_.html#geometricmean" class="tsd-kind-icon">geometric<wbr>Mean</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_statistics_summary_.html#harmonicmean" class="tsd-kind-icon">harmonic<wbr>Mean</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_statistics_summary_.html#median" class="tsd-kind-icon">median</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_statistics_summary_.html#midrange" class="tsd-kind-icon">midrange</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_statistics_summary_.html#mode" class="tsd-kind-icon">mode</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_statistics_summary_.html#sum" class="tsd-kind-icon">sum</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_transform_filters_.html#filterfalse" class="tsd-kind-icon">filter<wbr>False</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_transform_filters_.html#filternegative" class="tsd-kind-icon">filter<wbr>Negative</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_transform_filters_.html#filterpositive" class="tsd-kind-icon">filter<wbr>Positive</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_transform_filters_.html#filtertrue" class="tsd-kind-icon">filter<wbr>True</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_transform_filters_.html#filterzero" class="tsd-kind-icon">filter<wbr>Zero</a></li>
 							</ul>
 						</section>
 					</div>
@@ -88,21 +86,55 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="arithmeticmean" class="tsd-anchor"></a>
-					<h3>arithmetic<wbr>Mean</h3>
+					<a name="filterfalse" class="tsd-anchor"></a>
+					<h3>filter<wbr>False</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">arithmetic<wbr>Mean<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">filter<wbr>False<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in statistics/summary.ts:17</li>
+									<li>Defined in transform/filters.ts:51</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Calculates the arithmetic mean from a number list</p>
+									<p>Filter false values from list</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>List with numeric values</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span></h4>
+							<ul>
+								<li>List with filtered values</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="filternegative" class="tsd-anchor"></a>
+					<h3>filter<wbr>Negative</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">filter<wbr>Negative<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in transform/filters.ts:21</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Filter negative values from list</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -110,33 +142,33 @@
 								<li>
 									<h5>data: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>List of numbers</p>
+										<p>List with numeric values</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
 							<ul>
-								<li>Arithmetic mean</li>
+								<li>List with filtered values</li>
 							</ul>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="geometricmean" class="tsd-anchor"></a>
-					<h3>geometric<wbr>Mean</h3>
+					<a name="filterpositive" class="tsd-anchor"></a>
+					<h3>filter<wbr>Positive</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">geometric<wbr>Mean<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">filter<wbr>Positive<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in statistics/summary.ts:75</li>
+									<li>Defined in transform/filters.ts:36</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Caluclates geometric mean of numeric values</p>
+									<p>Filter positive values from list</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -144,64 +176,67 @@
 								<li>
 									<h5>data: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>List of numeric values</p>
+										<p>List with numeric values</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
 							<ul>
-								<li>Geometric mean</li>
+								<li>List with filtered values</li>
 							</ul>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="harmonicmean" class="tsd-anchor"></a>
-					<h3>harmonic<wbr>Mean</h3>
+					<a name="filtertrue" class="tsd-anchor"></a>
+					<h3>filter<wbr>True</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">harmonic<wbr>Mean<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">filter<wbr>True<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in statistics/summary.ts:86</li>
+									<li>Defined in transform/filters.ts:66</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Calculates harmonic mean of numeric values</p>
+									<p>Filter true values from list</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>data: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>data: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>List with numeric values</p>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span></h4>
 							<ul>
-								<li>Harmonic mean</li>
+								<li>List with filtered values</li>
 							</ul>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="median" class="tsd-anchor"></a>
-					<h3>median</h3>
+					<a name="filterzero" class="tsd-anchor"></a>
+					<h3>filter<wbr>Zero</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">median<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">filter<wbr>Zero<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in statistics/summary.ts:30</li>
+									<li>Defined in transform/filters.ts:6</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Calculates the median of numeric sorted list</p>
+									<p>Filter zeroes from list</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -209,112 +244,13 @@
 								<li>
 									<h5>data: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Sorted list of numbers</p>
+										<p>List with numeric values</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
 							<ul>
-								<li>Median of numeric values</li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="midrange" class="tsd-anchor"></a>
-					<h3>midrange</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">midrange<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in statistics/summary.ts:66</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Calculates the midrange of numeric sorted values</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>data: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<ul>
-								<li>Midrange of numeric values</li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="mode" class="tsd-anchor"></a>
-					<h3>mode</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in statistics/summary.ts:45</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Calculates the mode of the numeric list</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>data: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>List of numbers</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Object</span></h4>
-							<ul>
-								<li>Object with modes</li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="sum" class="tsd-anchor"></a>
-					<h3>sum</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">sum<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in statistics/summary.ts:6</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Calculates the sum of a number list</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>data: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>List of numbers</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<ul>
-								<li>Sum of data</li>
+								<li>List with filtered values</li>
 							</ul>
 						</li>
 					</ul>
@@ -333,13 +269,13 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_statistics_dispersion_.html">"statistics/dispersion"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="_statistics_summary_.html">"statistics/summary"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_transform_binning_.html">"transform/binning"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="_transform_filters_.html">"transform/filters"</a>
 					</li>
 				</ul>
@@ -347,25 +283,19 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_statistics_summary_.html#arithmeticmean" class="tsd-kind-icon">arithmetic<wbr>Mean</a>
+						<a href="_transform_filters_.html#filterfalse" class="tsd-kind-icon">filter<wbr>False</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_statistics_summary_.html#geometricmean" class="tsd-kind-icon">geometric<wbr>Mean</a>
+						<a href="_transform_filters_.html#filternegative" class="tsd-kind-icon">filter<wbr>Negative</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_statistics_summary_.html#harmonicmean" class="tsd-kind-icon">harmonic<wbr>Mean</a>
+						<a href="_transform_filters_.html#filterpositive" class="tsd-kind-icon">filter<wbr>Positive</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_statistics_summary_.html#median" class="tsd-kind-icon">median</a>
+						<a href="_transform_filters_.html#filtertrue" class="tsd-kind-icon">filter<wbr>True</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_statistics_summary_.html#midrange" class="tsd-kind-icon">midrange</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_statistics_summary_.html#mode" class="tsd-kind-icon">mode</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_statistics_summary_.html#sum" class="tsd-kind-icon">sum</a>
+						<a href="_transform_filters_.html#filterzero" class="tsd-kind-icon">filter<wbr>Zero</a>
 					</li>
 				</ul>
 			</nav>
