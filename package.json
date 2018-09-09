@@ -28,7 +28,7 @@
     "test": "npm run test-only",
     "test-only": "jest --coverage",
     "test:watch": "jest --watch",
-    "docs:build": "typedoc ./src --out docs --exclude **/*+(e2e|test|index).ts",
+    "docs:build": "typedoc ./src --out docs --exclude **/*index.ts",
     "docs:serve": "http-server ./docs -b localhost"
   },
   "author": "Josip Haboić <josiphaboic@gmail.com>",
