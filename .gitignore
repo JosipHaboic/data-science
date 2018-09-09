@@ -6,6 +6,9 @@ npm-debug.log*
 # Dependencies
 node_modules/
 
+# Test outputs
+test-output
+
 # Coverage
 coverage
 
