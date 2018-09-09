@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;statistics/dispersion&quot; | data-science</title>
+	<title>Sample | data-science</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -58,8 +58,11 @@
 				<li>
 					<a href="_statistics_dispersion_.html">&quot;statistics/dispersion&quot;</a>
 				</li>
+				<li>
+					<a href="_statistics_dispersion_.sample.html">Sample</a>
+				</li>
 			</ul>
-			<h1>External module &quot;statistics/dispersion&quot;</h1>
+			<h1>Module Sample</h1>
 		</div>
 	</div>
 </header>
@@ -71,17 +74,9 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Modules</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-module tsd-parent-kind-external-module"><a href="_statistics_dispersion_.population.html" class="tsd-kind-icon">Population</a></li>
-								<li class="tsd-kind-module tsd-parent-kind-external-module"><a href="_statistics_dispersion_.sample.html" class="tsd-kind-icon">Sample</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_statistics_dispersion_.html#range" class="tsd-kind-icon">range</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_statistics_dispersion_.html#standarddeviation" class="tsd-kind-icon">standard<wbr>Deviation</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_statistics_dispersion_.sample.html#variance" class="tsd-kind-icon">variance</a></li>
 							</ul>
 						</section>
 					</div>
@@ -89,22 +84,22 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="range" class="tsd-anchor"></a>
-					<h3>range</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">range<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="variance" class="tsd-anchor"></a>
+					<h3>variance</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">variance<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in statistics/dispersion.ts:8</li>
+									<li>Defined in statistics/dispersion.ts:48</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Calcaulte range of data</p>
+									<p>Calculate variance of sample</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -118,41 +113,7 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 							<ul>
-								<li>Range of data</li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="standarddeviation" class="tsd-anchor"></a>
-					<h3>standard<wbr>Deviation</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">standard<wbr>Deviation<span class="tsd-signature-symbol">(</span>variance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in statistics/dispersion.ts:17</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Calculate standard deviation from variance</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>variance: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>variance of data</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<ul>
-								<li>Standard deviation of data</li>
+								<li>Variance of sample data</li>
 							</ul>
 						</li>
 					</ul>
@@ -165,30 +126,12 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_models_labeled_.html">"models/labeled"</a>
-					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="_statistics_dispersion_.html">"statistics/dispersion"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_statistics_summary_.html">"statistics/summary"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_transform_binning_.html">"transform/binning"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_transform_filters_.html">"transform/filters"</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_statistics_dispersion_.html#range" class="tsd-kind-icon">range</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_statistics_dispersion_.html#standarddeviation" class="tsd-kind-icon">standard<wbr>Deviation</a>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_statistics_dispersion_.sample.html#variance" class="tsd-kind-icon">variance</a>
 					</li>
 				</ul>
 			</nav>
