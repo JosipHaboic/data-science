@@ -1,4 +1,4 @@
-import * as dispersion from '../src/statistics/dispersion';
+import * as dispersion from '../../src/statistics/dispersion';
 
 
 test('function range: throws an TypeError when not passed any data', () => {

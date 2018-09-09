@@ -1,4 +1,4 @@
-import * as fn from '../src/statistics/summary';
+import * as fn from '../../src/statistics/summary';
 
 
 test('function sum: throws TypeError when not passed any data', () => {
