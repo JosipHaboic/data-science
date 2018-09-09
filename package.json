@@ -29,7 +29,6 @@
     "test": "npm run test-only",
     "test-only": "jest --coverage",
     "test:watch": "jest --watch",
-    "tutorial:build": "typedoc ./src --tutorials --exclude **/*index.ts --out tutorial",
     "docs:build": "typedoc ./src --exclude **/*index.ts --out docs",
     "docs:serve": "http-server ./docs -b localhost"
   },
