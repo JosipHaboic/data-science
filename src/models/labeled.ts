@@ -1,6 +1,6 @@
 /**
  * Represents an single labaled value
- * @constructor {string} label, number | string | boolean value
+ * @constructor ({string} label, {number | string | boolean} value)
  * @property {string} label
  * @property {number | string | boolean} value
  */
