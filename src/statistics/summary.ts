@@ -90,7 +90,11 @@ export function harmonicMean(data: number[]): number {
   }));
 }
 
-
+/**
+ * Calculates common summary for data
+ * @param {array} - List of numeric values
+ * @returns {Object} - Object containing common summary for data
+ */
 export function summary(data: number[]): {} {
   return {
     sum: sum(data),
