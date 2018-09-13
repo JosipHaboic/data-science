@@ -60,3 +60,12 @@ test('function harmonicMean: throws TypeError when not passed any data', () => {
 test('function harmonicMean: returns 1.6363636363636 from list of [1, 2, 3]', () => {
   expect(fn.harmonicMean([1, 2, 3])).toBeCloseTo(1.6363636363636);
 })
+
+
+test('function summary: throws TypeError when not passed any data', () => {
+  expect(fn.summary).toThrowError(TypeError);
+})
+
+test('function summary: returns string when passed date [1, 2, 3]', () => {
+  expect(fn.summary([1, 2, 3])).toBeInstanceOf(Object);
+})

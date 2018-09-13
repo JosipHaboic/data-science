@@ -89,3 +89,16 @@ export function harmonicMean(data: number[]): number {
       return previous + (1 / current);
   }));
 }
+
+
+export function summary(data: number[]): {} {
+  return {
+    sum: sum(data),
+    arithmeticMean: arithmeticMean(data),
+    median: median(data),
+    mode: mode(data),
+    midrange: midrange(data),
+    geometricMean: geometricMean(data),
+    harmonicMean: harmonicMean(data)
+  }
+}
