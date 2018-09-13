@@ -43,7 +43,7 @@ export function median(data: number[]): number {
  * @returns {Object} - Object with modes
  */
 export function mode(data: number[]): Object {
-  const counter = {};
+  let counter = {};
 
   for (const item of data) {
     if (counter[item]) {
@@ -54,6 +54,15 @@ export function mode(data: number[]): Object {
       counter[item] = 1;
     }
   }
+  counter = Object.keys(counter).map((key: string) => {
+    return [key, counter[key]];
+  }).sort((a: number[], b: number[]) => {
+    if (a[1] > b[1]) {
+      return -1;
+    } else {
+      return 1;
+    }
+  });
 
   return counter;
 }
