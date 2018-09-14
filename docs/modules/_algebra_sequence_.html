@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>data-science</title>
+	<title>&quot;algebra/sequence&quot; | data-science</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">data-science</a>
+					<a href="../index.html" class="title">data-science</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -53,87 +53,163 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="globals.html">Globals</a>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="_algebra_sequence_.html">&quot;algebra/sequence&quot;</a>
 				</li>
 			</ul>
-			<h1> data-science</h1>
+			<h1>External module &quot;algebra/sequence&quot;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<h1 id="data-science">data-science</h1>
-				<h2 id="data-science-library">Data science library</h2>
-				<hr>
-				<ul>
-					<li>Statistics<ul>
-							<li>Summary statictics</li>
-							<li>Dispersion statistics</li>
-						</ul>
-					</li>
-					<li>Data Transformation<ul>
-							<li>Binning</li>
-							<li>Encoding - TODO</li>
-						</ul>
-					</li>
-					<li>Data Cleansing<ul>
-							<li>Filters - TODO</li>
-						</ul>
-					</li>
-					<li>Common function<ul>
-							<li>TODO</li>
-						</ul>
-					</li>
-				</ul>
-				<hr>
-				<h3 id="how-to-docs">How To: Docs</h3>
-				<p><strong>Note</strong>: Docs are already builded in this repository so you can skip build part and just serve them, but if you want to change the looks or add something in your local copy then you need to do build step first.</p>
-				<p>You first need to install typedoc:</p>
-				<pre><code class="language-bash">npm install -g typedoc</code></pre>
-				<p>Then you need to run npm build script:</p>
-				<pre><code class="language-bash">npm run docs:build</code></pre>
-				<p>And finally you need to start serving the docs with local http server, script uses as default http-server:</p>
-				<pre><code class="language-bash">npm run docs:serve</code></pre>
-				<p>Now open your web broweser and go to this address:</p>
-				<pre><code class="language-bash">localhost:8080</code></pre>
-			</div>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_algebra_sequence_.html#arithmetic" class="tsd-kind-icon">arithmetic</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_algebra_sequence_.html#linear" class="tsd-kind-icon">linear</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="arithmetic" class="tsd-anchor"></a>
+					<h3>arithmetic</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">arithmetic<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, difference<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in algebra/sequence.ts:7</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Generates arithmetic sequence</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>start: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Start of sequence</p>
+									</div>
+								</li>
+								<li>
+									<h5>difference: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Difference between each item in sequence</p>
+									</div>
+								</li>
+								<li>
+									<h5>n: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Number of items in sequence</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="linear" class="tsd-anchor"></a>
+					<h3>linear</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">linear<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, intercept<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in algebra/sequence.ts:21</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Generates linear sequence</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>start: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Start of sequence</p>
+									</div>
+								</li>
+								<li>
+									<h5>intercept: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Intercept</p>
+									</div>
+								</li>
+								<li>
+									<h5>n: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Number of items in sequence</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="globals.html"><em>Globals</em></a>
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="_algebra_sequence_.html">"algebra/sequence"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_algebra_sequence_.html">"algebra/sequence"</a>
+						<a href="_models_labeled_.html">"models/labeled"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_models_labeled_.html">"models/labeled"</a>
+						<a href="_random_range_.html">"random/range"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_random_range_.html">"random/range"</a>
+						<a href="_statistics_dispersion_.html">"statistics/dispersion"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_statistics_dispersion_.html">"statistics/dispersion"</a>
+						<a href="_statistics_summary_.html">"statistics/summary"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_statistics_summary_.html">"statistics/summary"</a>
+						<a href="_transform_binning_.html">"transform/binning"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_transform_binning_.html">"transform/binning"</a>
+						<a href="_transform_filters_.html">"transform/filters"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_transform_filters_.html">"transform/filters"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_transform_maps_.html">"transform/maps"</a>
+						<a href="_transform_maps_.html">"transform/maps"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_algebra_sequence_.html#arithmetic" class="tsd-kind-icon">arithmetic</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_algebra_sequence_.html#linear" class="tsd-kind-icon">linear</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -202,7 +278,7 @@
 	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
-<script src="assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>
