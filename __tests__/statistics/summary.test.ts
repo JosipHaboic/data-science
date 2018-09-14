@@ -34,7 +34,15 @@ test('function mode: throws TypeError when not passed any data', () => {
 })
 
 test('function mode: returns {"1": 1, "2": 2} from list of [1, 2, 2]', () => {
-  expect(fn.mode([1, 2, 2])).toEqual({"1": 1, "2": 2});
+  expect(fn.mode([1, 2, 2])).toEqual([["2", 2], ["1", 1]]);
+})
+
+test('function mode: returns {"1": 1, "2": 2} from list of [1, 2, 2]', () => {
+  expect(fn.mode([2, 2, 1])).toEqual([["2", 2], ["1", 1]]);
+})
+
+test('function mode: returns {"1": 1, "2": 2} from list of [1, 2, 2]', () => {
+  expect(fn.mode([1, 1, 2])).toEqual([["1", 2], ["2", 1]]);
 })
 
 test('function midrange: throws TypeError when not passed any data', () => {
@@ -59,4 +67,13 @@ test('function harmonicMean: throws TypeError when not passed any data', () => {
 
 test('function harmonicMean: returns 1.6363636363636 from list of [1, 2, 3]', () => {
   expect(fn.harmonicMean([1, 2, 3])).toBeCloseTo(1.6363636363636);
+})
+
+
+test('function summary: throws TypeError when not passed any data', () => {
+  expect(fn.summary).toThrowError(TypeError);
+})
+
+test('function summary: returns string when passed date [1, 2, 3]', () => {
+  expect(fn.summary([1, 2, 3])).toBeInstanceOf(Object);
 })
