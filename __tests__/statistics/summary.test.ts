@@ -34,7 +34,15 @@ test('function mode: throws TypeError when not passed any data', () => {
 })
 
 test('function mode: returns {"1": 1, "2": 2} from list of [1, 2, 2]', () => {
-  expect(fn.mode([1, 2, 2])).toEqual({"1": 1, "2": 2});
+  expect(fn.mode([1, 2, 2])).toEqual([["2", 2], ["1", 1]]);
+})
+
+test('function mode: returns {"1": 1, "2": 2} from list of [1, 2, 2]', () => {
+  expect(fn.mode([2, 2, 1])).toEqual([["2", 2], ["1", 1]]);
+})
+
+test('function mode: returns {"1": 1, "2": 2} from list of [1, 2, 2]', () => {
+  expect(fn.mode([1, 1, 2])).toEqual([["1", 2], ["2", 1]]);
 })
 
 test('function midrange: throws TypeError when not passed any data', () => {
