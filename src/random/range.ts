@@ -4,7 +4,7 @@ export function range(start: number = 0, end: number = 1, n: number = 10) {
   while (data.length < n) {
     // tslint:disable-next-line
     item = Math.random() * end;
-    if (item > start) {
+    if (item >= start) {
       data.push(item);
     }
   }
