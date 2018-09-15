@@ -1,2 +1,3 @@
-export * from './binning'; // import * as binning from './transfrom/binning';
+export * from './binning';
 export * from './filters';
+export * from './maps';
