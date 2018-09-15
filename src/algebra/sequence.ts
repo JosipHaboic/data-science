@@ -25,3 +25,15 @@ export function * linear(start: number, intercept: number, n: number) {
     x += 1;
   }
 }
+
+/**
+ * Generates triangular sequence
+ * @param n {number} - Number of items in sequence
+ */
+export function * triangular(n: number) {
+  let i = 1;
+  while (i <= n) {
+    yield (i * (i + 1)) / 2;
+    i += 1
+  }
+}

@@ -13,3 +13,8 @@ test('sequnce:linear - return [1, 2, 3] when (start=1, intercept=1, n=3)', () =>
 test('sequnce:linear - return [2, 4, 7] when (start=1, intercept=2, n=3)', () => {
   expect([...sequence.linear(1, 2, 3)]).toEqual([2, 3, 4]);
 });
+
+
+test('sequnce:triangular - return [1, 3, 6, 10, 15] when (n=5)', () => {
+  expect([...sequence.triangular(5)]).toEqual([1, 3, 6, 10, 15]);
+});
