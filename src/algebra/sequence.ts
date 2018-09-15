@@ -49,3 +49,20 @@ export function * square(n: number) {
     i += 1
   }
 }
+
+/**
+ * Generates factorial sequence
+ * @param n {number} - Number of items in sequence
+ */
+export function * factorial(n: number) {
+  let result = 1;
+  if (n > 1) {
+    for(let k = 2; k < n; k += 1) {
+      result *= k;
+      yield result;
+    }
+  } else {
+    yield result;
+  }
+
+}
