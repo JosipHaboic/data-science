@@ -37,3 +37,15 @@ export function * triangular(n: number) {
     i += 1
   }
 }
+
+/**
+ * Generates square sequence
+ * @param n {number} - Number of items in sequence
+ */
+export function * square(n: number) {
+  let i = 1;
+  while (i <= n) {
+    yield Math.pow(i, 2);
+    i += 1
+  }
+}
