@@ -19,5 +19,9 @@ test('function range: returns 1 random numbers in range [10 ... 20]', () => {
 })
 
 test('function range: returns 1 random numbers in range [-10 ... 0]', () => {
-  expect([...range.range(-10, 0, 1)][0]).toBeGreaterThan(-11);
+  expect([...range.range(-10, 0, 1)][0]).toBeGreaterThanOrEqual(-10);
+})
+
+test('function range: returns 1 random numbers in range [-10 ... 0]', () => {
+  expect([...range.range(0, 0, 1)][0]).toBe(0);
 })
