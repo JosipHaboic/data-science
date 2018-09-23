@@ -15,11 +15,9 @@ export function sum(data: number[]): number {
  * @returns {number} - Arithmetic mean
  */
 export function arithmeticMean(data: number[]): number {
-  const sumOfData = data.reduce((previous: number, current: number) => {
+  return data.reduce((previous: number, current: number) => {
     return previous + current;
-  }, 0);
-
-  return sumOfData / data.length;
+  }, 0) / data.length;
 }
 
 /**
@@ -28,6 +26,7 @@ export function arithmeticMean(data: number[]): number {
  * @returns {number} - Median of numeric values
  */
 export function median(data: number[]): number {
+  // avoid to many instance gets.
   const length = data.length;
   const isOdd = (length + 1) % 2 === 0;
   if (isOdd) {
@@ -55,9 +54,11 @@ export function mode(data: number[]): Object {
     }
   }
 
-  return Object.keys(counter).map((key: string) => {
-    return [key, counter[key]];
-    }).sort((a: number[], b: number[]) => {
+  return Object.keys(counter).map(
+    (key: string) => {
+      return [key, counter[key]];
+    })
+    .sort((a: number[], b: number[]) => {
       if (a[1] > b[1]) {
         return -1;
       } else {
