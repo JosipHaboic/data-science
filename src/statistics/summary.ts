@@ -109,6 +109,8 @@ export function harmonicMean(data: number[]): number {
 export function summary(data: number[]): {} {
   return {
     sum: sum(data),
+    min: Math.min(...data),
+    max: Math.max(...data),
     arithmeticMean: arithmeticMean(data),
     median: median(data),
     mode: mode(data),
