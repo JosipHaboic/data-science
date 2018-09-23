@@ -27,11 +27,9 @@ export namespace Population {
    * @returns {number} - Variance of population data
    */
   export function variance(data: number[]): number {
-    const populationMean = arithmeticMean(data);
-
     return (1 / data.length) * data.reduce(
       (previous: number, current: number) => {
-        return previous + Math.pow(current - populationMean, 2);
+        return previous + Math.pow(current - arithmeticMean(data), 2);
       }, 0
     );
   }
@@ -46,11 +44,9 @@ export namespace Sample {
    * @returns {number} - Variance of sample data
    */
   export function variance(data: number[]): number {
-    const populationMean = arithmeticMean(data);
-
     return (1 / (data.length - 1)) * data.reduce(
       (previous: number, current: number) => {
-        return previous + Math.pow(current - populationMean, 2);
+        return previous + Math.pow(current - arithmeticMean(data), 2);
       }, 0
     );
   }
