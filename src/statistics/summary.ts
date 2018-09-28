@@ -102,6 +102,18 @@ export function harmonicMean(data: number[]): number {
 }
 
 /**
+ * Calculate magnitude of data
+ * @param data - number list
+ */
+export function magnitude(data: number[]) {
+  const sumOfSquares = data.reduce((previousValue: number, currentValue: number) => {
+    return previousValue + Math.pow(currentValue, 2);
+  });
+
+  return Math.sqrt(sumOfSquares);
+}
+
+/**
  * Calculates common summary for data
  * @param {array} - List of numeric values
  * @returns {Object} - Object containing common summary for data

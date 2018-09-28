@@ -77,3 +77,15 @@ test('function summary: throws TypeError when not passed any data', () => {
 test('function summary: returns string when passed date [1, 2, 3]', () => {
   expect(fn.summary([1, 2, 3])).toBeInstanceOf(Object);
 })
+
+test('function magnitude: throws TypeError when not passed any data', () => {
+  expect(fn.magnitude).toThrowError(TypeError);
+})
+
+test('function magnitude: returns 3.7416573867739413 from list of [1, 2, 3]', () => {
+  expect(fn.magnitude([1, 2, 3])).toBeCloseTo(3.7416573867739413);
+})
+
+test('function magnitude: returns 0 from list of [0, 0, 0]', () => {
+  expect(fn.magnitude([0, 0, 0])).toBe(0);
+})
