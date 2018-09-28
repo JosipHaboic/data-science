@@ -21,7 +21,7 @@ module.exports = {
   "reporters": [
     ["./node_modules/jest-html-reporter", {
         "pageTitle": "Test Report",
-        "outputPath": "./test.md"
+        "outputPath": "./test-output/test.html"
     }]
 ]
 };
