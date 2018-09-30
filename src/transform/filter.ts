@@ -3,7 +3,7 @@
  * @param {number[]} data - List with numeric values
  * @returns {number[]} - List with filtered values
  */
-export function filterZero(data: number[]) {
+export function filterZeros(data: number[]) {
   return data.filter((item: number) => {
     if (item !== 0) {
       return true;

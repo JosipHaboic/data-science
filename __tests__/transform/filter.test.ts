@@ -1,20 +1,20 @@
 import * as filter from '../../src/transform/filter';
 
 
-test('filter:filterZero should throw TypeError when not passed any data', () => {
-  expect(filter.filterZero).toThrowError(TypeError);
+test('filter:filterZeros should throw TypeError when not passed any data', () => {
+  expect(filter.filterZeros).toThrowError(TypeError);
 });
 
-test('filter:filterZero should return [-1, 1] when passed data [-1, 0, 1]', () => {
-  expect(filter.filterZero([-1, 0, 1])).toEqual([-1, 1]);
+test('filter:filterZeros should return [-1, 1] when passed data [-1, 0, 1]', () => {
+  expect(filter.filterZeros([-1, 0, 1])).toEqual([-1, 1]);
 });
 
-test('filter:filterZero should return [] when passed data [0, 0, 0]', () => {
-  expect(filter.filterZero([0, 0, 0])).toEqual([]);
+test('filter:filterZeros should return [] when passed data [0, 0, 0]', () => {
+  expect(filter.filterZeros([0, 0, 0])).toEqual([]);
 });
 
-test('filter:filterZero should return [1, 1, 1] when passed data [1, 1, 1]', () => {
-  expect(filter.filterZero([1, 1, 1])).toEqual([1, 1, 1]);
+test('filter:filterZeros should return [1, 1, 1] when passed data [1, 1, 1]', () => {
+  expect(filter.filterZeros([1, 1, 1])).toEqual([1, 1, 1]);
 });
 
 
