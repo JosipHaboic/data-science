@@ -35,7 +35,7 @@ export function filterNegative(data: number[]) {
  */
 export function filterPositive(data: number[]) {
   return data.filter((item: number) => {
-    if (item <= 0) {
+    if (item < 0) {
       return true;
     }
 
