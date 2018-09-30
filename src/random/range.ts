@@ -3,6 +3,7 @@
  * @param start {number} - Smallest possible number
  * @param end {number} - Biggest possible number
  * @param n {number} - Number of random numbers
+ * @returns {number[]}
  */
 export function * range(start: number = 0, end: number = 1, n: number = 10) {
   let i = 0;

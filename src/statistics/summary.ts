@@ -1,6 +1,6 @@
 /**
  * Calculates the sum of a number list
- * @param {array} data - List of numbers
+ * @param data {number[]} - List of numbers
  * @returns {number} - Sum of data
  */
 export function sum(data: number[]): number {
@@ -11,7 +11,7 @@ export function sum(data: number[]): number {
 
 /**
  * Calculates the arithmetic mean from a number list
- * @param {array} data - List of numbers
+ * @param data {number[]} - List of numbers
  * @returns {number} - Arithmetic mean
  */
 export function arithmeticMean(data: number[]): number {
@@ -22,7 +22,7 @@ export function arithmeticMean(data: number[]): number {
 
 /**
  * Calculates the median of numeric sorted list
- * @param {array} data - Sorted list of numbers
+ * @param data {number[]} - Sorted list of numbers
  * @returns {number} - Median of numeric values
  */
 export function median(data: number[]): number {
@@ -38,7 +38,7 @@ export function median(data: number[]): number {
 
 /**
  * Calculates the mode of the numeric list
- * @param {array} data - List of numbers
+ * @param data {number[]} - List of numbers
  * @returns {Object} - Object with modes
  */
 export function mode(data: number[]): Object {
@@ -71,7 +71,7 @@ export function mode(data: number[]): Object {
 
 /**
  * Calculates the midrange of numeric sorted values
- * @param {array} - Sortred list of numbers
+ * @param data {number[]} - Sortred list of numbers
  * @returns {number} - Midrange of numeric values
  */
 export function midrange(data: number[]): number {
@@ -80,7 +80,7 @@ export function midrange(data: number[]): number {
 
 /**
  * Caluclates geometric mean of numeric values
- * @param {array} data - List of numeric values
+ * @param data {number[]} - List of numeric values
  * @returns {number} - Geometric mean
  */
 export function geometricMean(data: number[]): number {
@@ -91,7 +91,7 @@ export function geometricMean(data: number[]): number {
 
 /**
  * Calculates harmonic mean of numeric values
- * @param {array} - List of numeric values
+ * @param data {number[]} - List of numeric values
  * @returns {number} - Harmonic mean
  */
 export function harmonicMean(data: number[]): number {
@@ -103,7 +103,7 @@ export function harmonicMean(data: number[]): number {
 
 /**
  * Calculate magnitude of data
- * @param data - number list
+ * @param data {number[]} - number list
  * @returns {number}
  */
 export function magnitude(data: number[]) {
@@ -116,7 +116,7 @@ export function magnitude(data: number[]) {
 
 /**
  * Calculates common summary for data
- * @param {array} - List of numeric values
+ * @param data {number[]} - List of numeric values
  * @returns {Object} - Object containing common summary for data
  */
 export function summary(data: number[]): {} {

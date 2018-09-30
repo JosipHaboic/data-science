@@ -2,8 +2,8 @@ export namespace Unsupervised {
 
   /**
    * Bin data into k bins with interval strategy
-   * @param {array} data - List of values
-   * @param {number} k - Size of a bin
+   * @param data {array} - List of values
+   * @param k {number} - Size of a bin
    * @returns {array} - Binned values into k bins
    */
   export function interval(data: number[], k: number): number[] {

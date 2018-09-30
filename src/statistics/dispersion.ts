@@ -2,7 +2,7 @@ import { arithmeticMean } from './summary';
 
 /**
  * Calcaulte range of data
- * @param {array} data - List of numerical data
+ * @param data {array} - List of numerical data
  * @returns {number} - Range of data
  */
 export function range(data: number[]): number {
@@ -11,7 +11,7 @@ export function range(data: number[]): number {
 
 /**
  * Calculate standard deviation from variance
- * @param {number} variance - variance of data
+ * @param variance {number} - variance of data
  * @returns {number} - Standard deviation of data
  */
 export function standardDeviation(variance: number) {
@@ -23,7 +23,7 @@ export namespace Population {
 
   /**
    * Calculate variance of population
-   * @param {array} data - List of numerical data
+   * @param data {array} - List of numerical data
    * @returns {number} - Variance of population data
    */
   export function variance(data: number[]): number {
@@ -40,7 +40,7 @@ export namespace Sample {
 
   /**
    * Calculate variance of sample
-   * @param {array} data - List of numerical data
+   * @param data {number[]} - List of numerical data
    * @returns {number} - Variance of sample data
    */
   export function variance(data: number[]): number {
