@@ -122,6 +122,7 @@ export function magnitude(data: number[]) {
 export function summary(data: number[]): {} {
   return {
     sum: sum(data),
+    magnitude: magnitude(data),
     min: Math.min(...data),
     max: Math.max(...data),
     arithmeticMean: arithmeticMean(data),
