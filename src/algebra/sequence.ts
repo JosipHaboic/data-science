@@ -3,6 +3,7 @@
  * @param start {number} - Start of sequence
  * @param difference {number} - Difference between each item in sequence
  * @param n {number} - Number of items in sequence
+ * @returns {number[]}
  */
 export function * arithmetic(start: number, difference: number, n: number) {
   let i = 0;
@@ -17,6 +18,7 @@ export function * arithmetic(start: number, difference: number, n: number) {
  * @param start {number} - Start of sequence
  * @param intercept {number} - Intercept
  * @param n {number} - Number of items in sequence
+ * @return {number[]}
  */
 export function * linear(start: number, intercept: number, n: number) {
   let x = 0;
@@ -29,6 +31,7 @@ export function * linear(start: number, intercept: number, n: number) {
 /**
  * Generates triangular sequence
  * @param n {number} - Number of items in sequence
+ * @returns {number[]}
  */
 export function * triangular(n: number) {
   let i = 1;
@@ -41,6 +44,7 @@ export function * triangular(n: number) {
 /**
  * Generates square sequence
  * @param n {number} - Number of items in sequence
+ * @returns {number[]}
  */
 export function * square(n: number) {
   let i = 1;
@@ -53,6 +57,7 @@ export function * square(n: number) {
 /**
  * Generates factorial sequence
  * @param n {number} - Number of items in sequence
+ * @returns {number[]}
  */
 export function * factorial(n: number) {
   let result = 1;

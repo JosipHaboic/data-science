@@ -1,9 +1,9 @@
 /**
  * Filter zeroes from list
- * @param {number[]} data - List with numeric values
+ * @param data {number[]} - List with numeric values
  * @returns {number[]} - List with filtered values
  */
-export function filterZero(data: number[]) {
+export function filterZeros(data: number[]) {
   return data.filter((item: number) => {
     if (item !== 0) {
       return true;
@@ -15,7 +15,7 @@ export function filterZero(data: number[]) {
 
 /**
  * Filter negative values from list
- * @param {number[]} data - List with numeric values
+ * @param data {number[]} - List with numeric values
  * @returns {number[]} - List with filtered values
  */
 export function filterNegative(data: number[]) {
@@ -30,12 +30,12 @@ export function filterNegative(data: number[]) {
 
 /**
  * Filter positive values from list
- * @param {number[]} data - List with numeric values
+ * @param data {number[]} - List with numeric values
  * @returns {number[]} - List with filtered values
  */
 export function filterPositive(data: number[]) {
   return data.filter((item: number) => {
-    if (item <= 0) {
+    if (item < 0) {
       return true;
     }
 
@@ -45,7 +45,7 @@ export function filterPositive(data: number[]) {
 
 /**
  * Filter false values from list
- * @param {number[]} data - List with numeric values
+ * @param data {number[]} - List with numeric values
  * @returns {number[]} - List with filtered values
  */
 export function filterFalse(data: boolean[]) {
@@ -60,7 +60,7 @@ export function filterFalse(data: boolean[]) {
 
 /**
  * Filter true values from list
- * @param {number[]} data - List with numeric values
+ * @param data {number[]} - List with numeric values
  * @returns {number[]} - List with filtered values
  */
 export function filterTrue(data: boolean[]) {
