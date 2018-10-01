@@ -43,8 +43,8 @@ test('filter:filterPositive should return [] when passed data [1, 1, 1]', () => 
   expect(filter.filterPositive([1, 1, 1])).toEqual([]);
 });
 
-test('filter:filterPositive should return [0, 0, 0] when passed data [0, 0, 0]', () => {
-  expect(filter.filterPositive([0, 0, 0])).toEqual([0, 0, 0]);
+test('filter:filterPositive should return [0, 0, 0] when passed data []', () => {
+  expect(filter.filterPositive([0, 0, 0])).toEqual([]);
 });
 
 test('filter:filterPositive should return [-1, -1, -1] when passed data [-1, -1, -1]', () => {
