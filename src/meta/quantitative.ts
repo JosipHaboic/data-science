@@ -5,7 +5,7 @@
 export type QuantitativeData = {[key: string]: number | number[]};
 // example
 // const myDog: QuantitativeData = {
-//   legs: 4, // discrete
-//   weight: 25.5, // continous
-//   height: 565 // continous
+//   'legs': 4, // discrete
+//   'weight': 25.5, // continous
+//   'height': 565 // continous
 // };
