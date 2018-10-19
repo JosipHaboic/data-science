@@ -18,7 +18,9 @@ export function round(data: number[]): number[] {
  * @returns {number}
  */
 export function normalize(data: number[]) {
+  const dataMagnitude = magnitude(data);
+
   return data.map((item: number) => {
-    return item / magnitude(data);
+    return item / dataMagnitude;
   });
 }
