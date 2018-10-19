@@ -9,7 +9,7 @@ import { arithmeticMean, sum } from './summary';
  */
 export function covariance(x: number[], y: number[]): number {
   if (x.length !== y.length) {
-    throw new RangeError('Data lengths should be equal');
+    throw new RangeError('x and y should have same lengths');
   }
   const avgX = arithmeticMean(x);
   const avgY = arithmeticMean(y);
@@ -31,7 +31,7 @@ export function covariance(x: number[], y: number[]): number {
  */
 export function correlation(x: number[], y: number[]) {
   if (x.length !== y.length) {
-    throw new RangeError('Data lengths should be equal');
+    throw new RangeError('x and y should have same lengths');
   }
 
   const meanX = arithmeticMean(x);
